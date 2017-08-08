@@ -6,9 +6,7 @@ prop-types-cleaner
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
-Write simple prop-types cleaner by type.
-
-Write original prop-types without transforming.
+Write simple prop-types cleaner by type, but write original prop-types without transforming.
 
 ## Why prop-types-cleaner
 
