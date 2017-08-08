@@ -1,6 +1,6 @@
 {
   "name": "prop-types-cleaner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Write simple prop-types cleaner by type",
   "main": "index.js",
   "scripts": {
