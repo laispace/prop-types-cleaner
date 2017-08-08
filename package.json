@@ -1,0 +1,33 @@
+{
+  "name": "prop-types-cleaner",
+  "version": "1.0.0",
+  "description": "Write simple prop-types cleaner by type",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "keywords": [
+    "prop-types",
+    "prop-types-cleaner",
+    "clean-prop-types",
+    "PropTypes"
+  ],
+  "author": "laispace",
+  "license": "MIT",
+  "dependencies": {
+    "invariant": "^2.2.2"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.5.0",
+    "prop-types": "^15.5.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laispace/prop-types-cleaner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/laispace/prop-types-cleaner/issues"
+  },
+  "homepage": "https://github.com/laispace/prop-types-cleaner#readme"
+}
