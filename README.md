@@ -2,8 +2,9 @@ prop-types-cleaner
 ==================
 
 [![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
-
 
 Write simple prop-types cleaner by type.
 
@@ -197,5 +198,12 @@ npm i
 npm test
 ```
 
+
+[npm-image]: https://img.shields.io/npm/v/prop-types-cleaner.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/prop-types-cleaner
+[travis-image]: https://img.shields.io/travis/laispace/prop-types-cleaner.svg?style=flat-square
+[travis-url]: https://travis-ci.org/laispace/prop-types-cleaner
+[coveralls-image]: https://img.shields.io/coveralls/laispace/prop-types-cleaner.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/laispace/prop-types-cleaner
+[downloads-image]: http://img.shields.io/npm/dm/prop-types-cleaner.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/prop-types-cleaner
