@@ -43,7 +43,7 @@ I think writing simple prop-types(e.g. `number`, `string`) by type and other pro
 
 
 # Installation
-```js
+```
 
 npm install --save prop-types-cleaner
 
@@ -51,7 +51,7 @@ npm install --save prop-types-cleaner
 
 # Usage
 
-```js
+```
 import propTypesCleaner from 'prop-types-cleaner';
 
 const propTypes = propTypesCleaner({
@@ -129,7 +129,7 @@ const propTypes = {
 
 `array`, `bool`, `number`, `object`, `string`, `symbol`, `func`, `node`, `element`
 
-```js
+```
 import propTypesCleaner from 'prop-types-cleaner';
 
 const propTypes = propTypesCleaner({
@@ -162,7 +162,7 @@ const propTypes = {
 
 `instanceOf`, `oneOfType`, `arrayOf`, `objectOf`, `shape`, `any`
 
-```js
+```
 import propTypesCleaner from 'prop-types-cleaner';
 
 const propTypes = propTypesCleaner({
