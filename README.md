@@ -12,7 +12,7 @@ Write simple prop-types cleaner by type, but write original prop-types without t
 
 When writing lots of prop-types with others, prop-types may become disordered like:
 
-```
+```js
 const propTypes = {
     isOdps: PropTypes.bool,
     report: PropTypes.xreportComponent,
@@ -42,7 +42,7 @@ I think writing simple prop-types(e.g. `number`, `string`) by type and other pro
 
 
 # Installation
-```
+```shell
 
 npm install --save prop-types-cleaner
 
@@ -50,7 +50,7 @@ npm install --save prop-types-cleaner
 
 # Usage
 
-```
+```js
 import propTypesCleaner from 'prop-types-cleaner';
 
 const propTypes = propTypesCleaner({
@@ -93,7 +93,7 @@ const propTypes = propTypesCleaner({
 ```
 
 It equals to:
-```
+```js
 const propTypes = {
 
     // simple prop-types
@@ -128,7 +128,7 @@ const propTypes = {
 
 `array`, `bool`, `number`, `object`, `string`, `symbol`, `func`, `node`, `element`
 
-```
+```js
 import propTypesCleaner from 'prop-types-cleaner';
 
 const propTypes = propTypesCleaner({
@@ -148,7 +148,7 @@ const propTypes = propTypesCleaner({
 
 It equals to:
 
-```
+```js
 const propTypes = {
     bool_a: PropTypes.bool.isRequired,
     bool_b: PropTypes.bool.isRequired,
@@ -161,7 +161,7 @@ const propTypes = {
 
 `instanceOf`, `oneOfType`, `arrayOf`, `objectOf`, `shape`, `any`
 
-```
+```js
 import propTypesCleaner from 'prop-types-cleaner';
 
 const propTypes = propTypesCleaner({
@@ -177,7 +177,7 @@ const propTypes = propTypesCleaner({
 ```
 
 It equals to:
-```
+```js
 const propTypes = {
     requiredObjectWithShape: PropTypes.shape({
         color: PropTypes.string,
@@ -191,7 +191,7 @@ const propTypes = {
 ```
 
 # test
-```
+```shell
 npm i
 npm test
 ```
