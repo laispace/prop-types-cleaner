@@ -2,8 +2,8 @@ const PropTypes = require('prop-types');
 const cleaner = require('./index');
 const expect = require('expect');
 
-describe('set cleaner config', function () {
-    it('set prop-types of array', function () {
+describe('set cleaner config', () => {
+    it('set prop-types of array', () => {
         expect(cleaner({
             array: {
                 isRequired: [
@@ -24,7 +24,7 @@ describe('set cleaner config', function () {
         });
     });
 
-    it('set prop-types of bool', function () {
+    it('set prop-types of bool', () => {
         expect(cleaner({
             bool: {
                 isRequired: [
@@ -45,7 +45,7 @@ describe('set cleaner config', function () {
         });
     });
 
-    it('set prop-types of number', function () {
+    it('set prop-types of number', () => {
         expect(cleaner({
             number: {
                 isRequired: [
@@ -65,7 +65,7 @@ describe('set cleaner config', function () {
         });
     });
 
-    it('set prop-types of object', function () {
+    it('set prop-types of object', () => {
         expect(cleaner({
             object: {
                 isRequired: [
@@ -85,7 +85,7 @@ describe('set cleaner config', function () {
         });
     });
 
-    it('set prop-types of string', function () {
+    it('set prop-types of string', () => {
         expect(cleaner({
             string: {
                 isRequired: [
@@ -105,7 +105,7 @@ describe('set cleaner config', function () {
         });
     });
 
-    it('set prop-types of symbol', function () {
+    it('set prop-types of symbol', () => {
         expect(cleaner({
             symbol: {
                 isRequired: [
@@ -125,7 +125,7 @@ describe('set cleaner config', function () {
         });
     });
 
-    it('set prop-types of func', function () {
+    it('set prop-types of func', () => {
         expect(cleaner({
             func: {
                 isRequired: [
@@ -145,7 +145,7 @@ describe('set cleaner config', function () {
         });
     });
 
-    it('set prop-types of node', function () {
+    it('set prop-types of node', () => {
         expect(cleaner({
             node: {
                 isRequired: [
@@ -165,7 +165,7 @@ describe('set cleaner config', function () {
         });
     });
 
-    it('set prop-types of element', function () {
+    it('set prop-types of element', () => {
         expect(cleaner({
             element: {
                 isRequired: [
@@ -186,9 +186,9 @@ describe('set cleaner config', function () {
     });
 });
 
-describe('set original config', function () {
-    it('set prop-types of instanceOf', function () {
-        const CustomClass = function () {};
+describe('set original config', () => {
+    it('set prop-types of instanceOf', () => {
+        const CustomClass = () => {};
         expect(cleaner({
             requiredMessage: PropTypes.instanceOf(CustomClass).isRequired,
             optionalMessage: PropTypes.instanceOf(CustomClass),
@@ -197,7 +197,7 @@ describe('set original config', function () {
             optionalMessage: PropTypes.instanceOf(CustomClass),
         });
     });
-    it('set prop-types of oneOfType', function () {
+    it('set prop-types of oneOfType', () => {
         expect(cleaner({
             requiredUnion: PropTypes.oneOfType([
                 PropTypes.string,
@@ -222,7 +222,7 @@ describe('set original config', function () {
             ]),
         });
     });
-    it('set prop-types of arrayOf', function () {
+    it('set prop-types of arrayOf', () => {
         expect(cleaner({
             requiredArrayOf: PropTypes.arrayOf(PropTypes.number).isRequired,
             optionalArrayOf: PropTypes.arrayOf(PropTypes.number)
@@ -231,7 +231,7 @@ describe('set original config', function () {
             optionalArrayOf: PropTypes.arrayOf(PropTypes.number)
         });
     });
-    it('set prop-types of objectOf', function () {
+    it('set prop-types of objectOf', () => {
         expect(cleaner({
             requiredObjectOf: PropTypes.objectOf(PropTypes.number).isRequired,
             optionalObjectOf: PropTypes.objectOf(PropTypes.number)
@@ -240,7 +240,7 @@ describe('set original config', function () {
             optionalObjectOf: PropTypes.objectOf(PropTypes.number)
         });
     });
-    it('set prop-types of shape', function () {
+    it('set prop-types of shape', () => {
         expect(cleaner({
             requiredObjectWithShape: PropTypes.shape({
                 color: PropTypes.string,
@@ -261,7 +261,7 @@ describe('set original config', function () {
             }),
         });
     });
-    it('set prop-types of any', function () {
+    it('set prop-types of any', () => {
         expect(cleaner({
             requiredAny: PropTypes.any.isRequired,
             optionalAny: PropTypes.any,
@@ -272,8 +272,8 @@ describe('set original config', function () {
     });
 });
 
-describe('set mixed config', function () {
-    it('set prop-types of array/bool/arrayOf/shape', function () {
+describe('set mixed config', () => {
+    it('set prop-types of array/bool/arrayOf/shape', () => {
         expect(cleaner({
             array: {
                 isRequired: [
